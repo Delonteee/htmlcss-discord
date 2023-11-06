@@ -58,19 +58,31 @@ main > section:nth-child(2n){
 /*   HEADER   */
 
 .header-top {
-    height: 80px;
+    height: 60px;
     padding-top: 10px;
 }
 .header-top .main-menu-container {
-    height:60px;
+    height:40px;
 }
 
 .header-top .main-menu-container > * {
     padding: 10px;
 }
 
+.header-top .main-menu-container .menu-nav {
+    text-align: center;
+}
+
+.header-top .main-menu-container .menu-nav ul li {
+    display: inline-block;
+}
+
+.header-top .main-menu-container .login {
+    text-align: right;
+}
+
 .header-bottom {
-    padding: 50px 0;
+    padding: 50px 0;    
 }
 
 /*   MAIN   */
@@ -92,6 +104,12 @@ footer {
 .footer-bottom {
     padding: 20px 0;
 }
+
+.footer-bottom .footer-bottom-row > * {
+    display: flex;
+    align-items: center;
+}
+
 
 /*   DEBUG   */
 
