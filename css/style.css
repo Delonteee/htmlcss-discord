@@ -55,30 +55,58 @@ main > section:nth-child(2n){
     width: calc((100% / 4) * 1);
 }
 
+.button-primary {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1 px solid white;
+    border-radius: 20px;
+}
+
+.button-primary > * {
+    color: #255EE9;
+}
+
 /*   HEADER   */
 
 .header-top {
-    height: 60px;
+    height: 80px;
     padding-top: 10px;
+    background-color: #255EE9;
 }
+
 .header-top .main-menu-container {
-    height:40px;
+    height:60px;
 }
 
 .header-top .main-menu-container > * {
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .header-top .main-menu-container .menu-nav {
-    text-align: center;
+    justify-content: center;    
 }
 
 .header-top .main-menu-container .menu-nav ul li {
     display: inline-block;
 }
 
+.header-top .main-menu-container .menu-nav ul li > * {
+    color: white;
+    text-decoration: none;
+}
+
+.header-top .main-menu-container .menu-nav ul li a > * {
+    padding: 10px 20px;
+}
+
 .header-top .main-menu-container .login {
-    text-align: right;
+    justify-content: end;
+}
+
+.header-top .main-menu-container .login > * {
+    text-decoration: none;
 }
 
 .header-bottom {
@@ -112,18 +140,6 @@ footer {
 
 
 /*   DEBUG   */
-
-.debug .header-top {
-    background-color: #ADD8E6;
-}
-
-.debug .header-top .main-menu-container {
-    background-color: #DAA520;
-}
-
-.debug .header-top .main-menu-container > *{
-    border: 1px dashed black;
-}
 
 .debug .header-bottom {
     background-color: #00008B;
