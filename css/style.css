@@ -63,7 +63,23 @@ main > section:nth-child(2n){
 }
 
 .button-primary > * {
-    color: #255EE9;
+    color: #23272A;
+}
+
+.button-secondary {
+    background-color: #23272A;
+    padding: 8px 16px;
+    border: 1 px solid #23272A;
+    border-radius: 20px;
+}
+
+.button-secondary > * {
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
 }
 
 /*   HEADER   */
@@ -110,7 +126,39 @@ main > section:nth-child(2n){
 }
 
 .header-bottom {
-    padding: 50px 0;    
+    padding: 50px 0; 
+    background-image: url("../img/jumbo.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.header-bottom .container-small .hero-img {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-bottom .container-small .hero-img > * {
+    padding: 20px 10%;
+}
+
+.header-bottom .container-small .hero-img p {
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+.header-bottom .container-small .hero-img .button-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom .container-small .hero-img .button-section > * {
+    padding: 12px 20px;
+    margin: -20px 20px;
 }
 
 /*   MAIN   */
@@ -140,16 +188,6 @@ footer {
 
 
 /*   DEBUG   */
-
-.debug .header-bottom {
-    background-color: #00008B;
-}
-
-.debug .header-bottom .container-small {
-    background-color: #EE82EE;
-    border: 1px dashed black;
-    min-height: 400px;
-}
 
 .debug main section .row .col-2-5 {
     background-color: #FFC0CB;
