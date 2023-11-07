@@ -28,7 +28,7 @@ html {
 }
 
 main > section:nth-child(2n){
-    background-color: lightgray;
+    background-color: #F6F6F6;
 }
 
 .col-1-6 {
@@ -167,6 +167,47 @@ h1 {
     padding: 40px 0;
 }
 
+.main-row {
+    min-height: 400px;
+}
+
+.main-row:first-child img {
+    height: 90%;    
+}
+
+.main-row .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-row .text-box > * {
+    padding: 10px 50px 10px 0;
+}
+
+.main-row .text-box h2 {
+    font-size: 50px;
+    text-align: left;
+}
+
+.main-row .text-box p {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.separator {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    background-image: url(../img/wave.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*   FOOTER  */
 
 footer {
@@ -188,18 +229,6 @@ footer {
 
 
 /*   DEBUG   */
-
-.debug main section .row .col-2-5 {
-    background-color: #FFC0CB;
-    border: 1px dashed black;
-    min-height: 400px;
-}
-
-.debug main section .row .col-3-5 {
-    background-color: #1E90FF;
-    border: 1px dashed black;
-    min-height: 400px;
-}
 
 .debug .green-container {
     width: 100%;
