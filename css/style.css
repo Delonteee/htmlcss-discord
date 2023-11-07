@@ -198,6 +198,55 @@ h1 {
     text-align: left;
 }
 
+.main-row .green-container {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-row .green-container h2 {
+    font-size: 50px;
+}
+
+.main-row .green-container p {
+    line-height: 2em;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-row .green-container .stars {
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+    background-image: url("../img/stars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-row .green-container .stars h3 {
+    font-size: 24px;
+}
+
+.main-row .green-container a {
+    text-decoration: none;
+}
+
+.main-row .green-container .button-primary{
+    background-color: #7289DA;
+    border-color: #7289DA;
+    padding: 12px 20px;
+    margin-top: 20px;  
+    margin-bottom: 60px;  
+}
+
+.main-row .green-container .button-primary > * {
+    color: white;
+}
+/*
+
 .separator {
     height: 80px;
     width: 100%;
@@ -207,6 +256,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+*/
 
 /*   FOOTER  */
 
@@ -227,15 +278,7 @@ footer {
     align-items: center;
 }
 
-
 /*   DEBUG   */
-
-.debug .green-container {
-    width: 100%;
-    background-color: green;
-    border: 1px dashed black;
-    min-height: 500px;
-}
 
 .debug .footer-top-row {
     background-color: #F08080;
